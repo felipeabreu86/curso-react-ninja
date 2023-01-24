@@ -1,5 +1,10 @@
 'use strict'
 
-var sum = require('./app.js');
+var React = require('react');
+var ReactDOM = require('react-dom');
+var Title = require('./app');
 
-console.log("Modularizando a aplicação. Soma de 1 e 2 = " + sum(1, 2));
+ReactDOM.render(
+    React.createElement(Title),
+    document.querySelector('[data-js="app"]')
+);
